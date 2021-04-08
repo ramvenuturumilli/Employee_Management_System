@@ -21,10 +21,10 @@ def user_auth(request):
     return render(request,'user_auth.html',context)
 
 def  index(request):
-    
     return render(request,'index.html')
-def list(request):
-    context = user_table.objects.all()
+
+def list_view(request):
+    context = {'list':  user_table.objects.all().values()}
     return render(request,'list.html',context)
 
 

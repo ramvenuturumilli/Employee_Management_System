@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+
+<body>
+<table>
+    <th>id</th>
+    <th>user_name</th>
+    <th>first_name</th>
+    <th>last_name</th>
+    <th>number</th>
+    <th>email</th>
+    <th>designation</th>
+    <th>department</th>
+    
+    {% for item in list %} 
+    <tr>
+    {% for j in item.values %}
+
+        <td>{{ j }}</td>
+    {% endfor %}
+</tr>
+    {% endfor %}
+
+    
+
+</table>
+</body>
+
+</html>
+
+
