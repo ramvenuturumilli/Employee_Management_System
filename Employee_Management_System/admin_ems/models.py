@@ -39,3 +39,4 @@ class user_auth(models.Model):
     def __str__(self):
         """Unicode representation of user_auth."""
         return self.user_name
+
