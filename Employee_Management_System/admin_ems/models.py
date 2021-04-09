@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 class user_table (models.Model):
    user_name = models.CharField(max_length=20, help_text='Enter user_name')
@@ -9,7 +10,7 @@ class user_table (models.Model):
    email = models.EmailField(max_length=25,help_text='Enter email')
    designation = models.CharField(max_length=20, help_text='Enter designation')
    department = models.CharField(max_length=20, help_text='Enter department')
-
+   
 
 #    #Metadata
 #    class Meta :
